@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "./srs",
+    "baseUrl": "./src",
     "target": "es5",
     "lib": [
       "dom",
