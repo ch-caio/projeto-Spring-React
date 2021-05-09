@@ -19,7 +19,7 @@ type ChartData = {
 
 const BarChart = () => {
 
-    const [ChartData, setChartData] = useState<ChartData>({
+    const [chartData, setChartData] = useState<ChartData>({
         labels: {
             categories: []
         },
@@ -63,8 +63,8 @@ const BarChart = () => {
 
     return (
         <Chart
-            options={{ ...options, xaxis: ChartData.labels }}
-            series={ChartData.series}
+            options={{ ...options, xaxis: chartData.labels }}
+            series={chartData.series}
             type="bar"
             height="240"
         />
